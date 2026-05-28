@@ -60,16 +60,13 @@
 <% } %>
 </p>
 
-<h2>Exercice 5 : Triangle isocele</h2><p>
+<h2>Exercice 5 : Triangle isocele</h2>
+<p>
 <% for (int i = 1; i <= cpt; i++) { %>
-    <%-- Espaces --%>
     <% for (int j = 1; j <= cpt - i; j++) { %>
-        &nbsp;
+        &nbsp;&nbsp;
     <% } %>
-    <%-- Etoiles --%>
-    <% for (int j = 1; j <= (2 * i - 1); j++) { %>
-        *
-    <% } %>
+    <% for (int j = 1; j <= (2 * i - 1); j++) { %><%= "*" %><% } %>
     <br>
 <% } %>
 </p>
