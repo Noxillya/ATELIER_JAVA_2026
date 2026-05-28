@@ -44,15 +44,13 @@
 <p>Votre chaîne contient <%= compteurE %> lettre(s) "e".</p>
 
 <h2>Exercice 2 : Affichage verticale</h2>
-<p>Ecrire le programme pour afficher le texte en vertical</br>
-Exemple : Bonjour</br>
-B</br>
-o</br>
-n</br>
-j</br>
-o</br>
-u</br>
-r</p>
+<%
+    for (int i = 0; i < chaine.length(); i++) {
+%>
+        <%= chaine.charAt(i) %><br>
+<%
+    }
+%>
 
 <h2>Exercice 3 : Retour à la ligne</h2>
 <p>La présence d'un espace provoque un retour à la ligne </br>
