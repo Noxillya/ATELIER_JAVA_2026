@@ -32,15 +32,13 @@
     
 <h2>Exercice 1 : Comparaison 1</h2>
 <form action="#" method="post">
-    <p>A : <input type="text" name="A"></p>
-    <p>B : <input type="text" name="B"></p>
     <p>C : <input type="text" name="C"></p>
     <p><input type="submit" value="Vérifier"></p>
 </form>
 
 <%
-String A = request.getParameter("A");
-String B = request.getParameter("B");
+String A = request.getParameter("valeur1");
+String B = request.getParameter("valeur2");
 String C = request.getParameter("C");
 
 if (A != null && B != null && C != null) {
