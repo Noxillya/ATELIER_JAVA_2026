@@ -31,31 +31,6 @@
    
     
 <h2>Exercice 1 : Comparaison 1</h2>
-<form action="#" method="post">
-    <p>C : <input type="text" name="C"></p>
-    <p><input type="submit" value="Vérifier"></p>
-</form>
-
-<%
-String A = request.getParameter("valeur1");
-String B = request.getParameter("valeur2");
-String C = request.getParameter("C");
-
-if (A != null && B != null && C != null) {
-    int a = Integer.parseInt(A);
-    int b = Integer.parseInt(B);
-    int c = Integer.parseInt(C);
-    if ((c >= a && c <= b) || (c >= b && c <= a)) {
-%>
-        <p>Oui, C est compris entre A et B.</p>
-<%
-    } else {
-%>
-        <p>Non, C n'est pas compris entre A et B.</p>
-<%
-    }
-}
-%>
 
 <h2>Exercice 2 : Pair ou Impair ?</h2>
 <p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
