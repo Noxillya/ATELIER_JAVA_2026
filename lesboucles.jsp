@@ -11,6 +11,12 @@
     <input type="submit" value="Afficher">
 </form>
 
+<% String valeur = request.getParameter("valeur"); %>
+
+<% if (valeur != null && !valeur.isEmpty()) { %>
+
+<% int cpt = Integer.parseInt(valeur); %>
+
 <h2>Exercice 1 : Le carré d'étoiles</h2>
 <p>
 <% for (int i = 1; i <= cpt; i++) { %>
