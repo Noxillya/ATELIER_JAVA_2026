@@ -39,8 +39,8 @@
 
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
 <p>
-<% for (int i = 1; i <= cpt; i++) { %>
-    <% for (int j = cpt; j <= j - i; j--) { %>
+<% for (int i = 0; i < cpt; i++) { %>
+    <% for (int j = cpt; j > j - i; j--) { %>
         *
     <% } %>
     <br>
