@@ -74,25 +74,25 @@
 <h2>Exercice 6 : Le demi losange</h2>
 <p>
 <%
-for (int i = 1; i <= cpt; i++) {
-    for (int j = 1; j <= cpt - i; j++) {
-        out.print("&nbsp;");
-    }
-    for (int j = 1; j <= i; j++) {
-        out.print("*");
-    }
-    out.print("<br>");
-}
-out.print("<br>");
-for (int i = cpt; i >= 1; i--) {
-    for (int j = 1; j <= cpt - i; j++) {
-        out.print("&nbsp;");
-    }
-    for (int j = 1; j <= i; j++) {
-        out.print("*");
+    for (int i = 1; i <= cpt; i++) {
+        for (int j = 1; j <= cpt - i; j++) {
+            out.print("&nbsp;");
+        }
+        for (int j = 1; j <= i; j++) {
+            out.print("*");
+        }
+        out.print("<br>");
     }
     out.print("<br>");
-}
+    for (int i = cpt; i >= 1; i--) {
+        for (int j = 1; j <= cpt - i; j++) {
+            out.print("&nbsp;");
+        }
+        for (int j = 1; j <= i; j++) {
+            out.print("*");
+        }
+        out.print("<br>");
+    }
 %>
 </p>
 
