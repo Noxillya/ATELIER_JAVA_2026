@@ -8,11 +8,13 @@
 <form action="#" method="post">
     <p>Saisir la valeur 1 : <input type="text" id="inputValeur" name="valeur1">
     <p>Saisir la valeur 2 : <input type="text" id="inputValeur" name="valeur2">
+    <p>Saisir la valeur 3 : <input type="text" id="inputValeur" name="valeur3">
     <p><input type="submit" value="Afficher">
 </form>
 <%-- Récupération des valeurs --%>
     <% String valeur1 = request.getParameter("valeur1"); %>
     <% String valeur2 = request.getParameter("valeur2"); %>
+    <% String valeur3 = request.getParameter("valeur3"); %>
 
     <%-- Vérification de la condition entre les deux valeurs --%>
     <% if (valeur1 != null && valeur2 != null) { %>
@@ -31,20 +33,11 @@
    
     
 <h2>Exercice 1 : Comparaison 1</h2>
-<form action="#" method="post">
-    <p>A : <input type="text" name="A"></p>
-    <p>B : <input type="text" name="B"></p>
-    <p>C : <input type="text" name="C"></p>
-    <p><input type="submit" value="Vérifier"></p>
-</form>
 <%
-String A = request.getParameter("A");
-String B = request.getParameter("B");
-String C = request.getParameter("C");
-if (A != null && B != null && C != null) {
-    int a = Integer.parseInt(A);
-    int b = Integer.parseInt(B);
-    int c = Integer.parseInt(C);
+if (valeur1 != null && valeur2 != null && valeur3 != null) {
+    int a = Integer.parseInt(valeur1);
+    int b = Integer.parseInt(valeur2);
+    int c = Integer.parseInt(valeur3);
     if ((c >= a && c <= b) || (c >= b && c <= a)) {
 %>
         <p>Oui, C est compris entre A et B.</p>
