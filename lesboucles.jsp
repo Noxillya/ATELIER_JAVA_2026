@@ -83,7 +83,7 @@ for (int i = 1; i <= cpt; i++) {
     }
     out.print("<br>");
 }
-<br>
+out.print("<br>");
 for (int i = cpt; i >= 1; i--) {
     for (int j = 1; j <= cpt - i; j++) {
         out.print("&nbsp;&nbsp;");
