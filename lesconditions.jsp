@@ -51,9 +51,17 @@ if (valeur1 != null && valeur2 != null && valeur3 != null) {
 %>
 
 <h2>Exercice 2 : Pair ou Impair ?</h2>
-<p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
-
-<% } %>
+<%
+if (intValeur1 % 2 == 0) {
+%>
+    <p>La valeur 1 est paire.</p>
+<%
+} else {
+%>
+    <p>La valeur 1 est impaire.</p>
+<%
+}
+%>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
 </html>
