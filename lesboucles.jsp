@@ -74,7 +74,6 @@
 <h2>Exercice 6 : Le demi losange</h2>
 <p>
 <%
-    // Partie montante
     for (int i = 1; i <= cpt; i++) {
         for (int j = 1; j <= cpt - i; j++) {
             out.print("&nbsp;");
@@ -84,9 +83,7 @@
         }
         out.print("<br>");
     }
-    // Ligne vide entre les deux parties
     out.print("<br>");
-    // Partie descendante
     for (int i = cpt; i >= 1; i--) {
         for (int j = 1; j <= cpt - i; j++) {
             out.print("&nbsp;");
