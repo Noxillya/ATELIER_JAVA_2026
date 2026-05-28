@@ -73,19 +73,27 @@
 
 <h2>Exercice 6 : Le demi losange</h2>
 <p>
-<% for (int i = 1; i <= cpt; i++) { %>
-    <% for (int j = 1; j <= i; j++) { %>
-        *
-    <% } %>
-    <br>
-<% } %>
+<%
+for (int i = 1; i <= cpt; i++) {
+    for (int j = 1; j <= cpt - i; j++) {
+        out.print("&nbsp;&nbsp;");
+    }
+    for (int j = 1; j <= i; j++) {
+        out.print("*");
+    }
+    out.print("<br>");
+}
 <br>
-<% for (int i = cpt - 1; i >= 1; i--) { %>
-    <% for (int j = 1; j <= i; j++) { %>
-        *
-    <% } %>
-    <br>
-<% } %>
+for (int i = cpt; i >= 1; i--) {
+    for (int j = 1; j <= cpt - i; j++) {
+        out.print("&nbsp;&nbsp;");
+    }
+    for (int j = 1; j <= i; j++) {
+        out.print("*");
+    }
+    out.print("<br>");
+}
+%>
 </p>
 
 <h2>Exercice 7 : La table de multiplication</h2>
