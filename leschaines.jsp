@@ -64,9 +64,11 @@
 %>
 
 <h2>Exercice 4 : Afficher une lettre sur deux</h2>
-<p>Ecrire le programme pour afficher seulement une lettre sur deux de votre texte </br>
-Exemple : L'hiver sera pluvieux</br>
-Lhvrsr lvex</p>
+<%
+    for (int i = 0; i < chaine.length(); i += 2) {
+        out.print(chaine.charAt(i));
+    }
+%>
 
 <h2>Exercice 5 : La phrase en verlant</h2>
 <p>Ecrire le programme afin d'afficher le texte en verlant </br>
