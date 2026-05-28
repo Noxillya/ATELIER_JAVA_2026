@@ -53,11 +53,15 @@
 %>
 
 <h2>Exercice 3 : Retour à la ligne</h2>
-<p>La présence d'un espace provoque un retour à la ligne </br>
-Exemple : L'hiver sera pluvieux</br>
-L'hiver</br>
-sera</br>
-pluvieux</p>
+<%
+    for (int i = 0; i < chaine.length(); i++) {
+        if (chaine.charAt(i) == ' ') {
+            out.print("<br>");
+        } else {
+            out.print(chaine.charAt(i));
+        }
+    }
+%>
 
 <h2>Exercice 4 : Afficher une lettre sur deux</h2>
 <p>Ecrire le programme pour afficher seulement une lettre sur deux de votre texte </br>
