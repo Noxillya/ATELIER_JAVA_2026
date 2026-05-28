@@ -31,13 +31,33 @@
    
     
 <h2>Exercice 1 : Comparaison 1</h2>
-<p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
-A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
-Exemple :</br>
-A = 10</br>
-B = 20</br>
-C = 15</br>
-Oui C est compris entre A et B</p>
+<form action="#" method="post">
+    <p>A : <input type="text" name="A"></p>
+    <p>B : <input type="text" name="B"></p>
+    <p>C : <input type="text" name="C"></p>
+    <p><input type="submit" value="Vérifier"></p>
+</form>
+
+<%
+String A = request.getParameter("A");
+String B = request.getParameter("B");
+String C = request.getParameter("C");
+
+if (A != null && B != null && C != null) {
+    int a = Integer.parseInt(A);
+    int b = Integer.parseInt(B);
+    int c = Integer.parseInt(C);
+    if ((c >= a && c <= b) || (c >= b && c <= a)) {
+%>
+        <p>Oui, C est compris entre A et B.</p>
+<%
+    } else {
+%>
+        <p>Non, C n'est pas compris entre A et B.</p>
+<%
+    }
+}
+%>
 
 <h2>Exercice 2 : Pair ou Impair ?</h2>
 <p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
